@@ -1,0 +1,6 @@
+{
+  "watch": ["./**/*.ts"],
+  "ext": "ts",
+  "exec": "ts-node bin/hyrax.ts",
+  "delay": 300
+}
