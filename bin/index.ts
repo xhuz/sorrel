@@ -1,4 +1,4 @@
-#!/usr/bin/env node --harmony
+#!/usr/bin/env node
 
 import {Command} from 'commander';
 import {newProject} from '../commands/new';
@@ -13,16 +13,4 @@ program
   .description('create a new project')
   .action(newProject);
 
-// must be before .parse() since
-// node's emit() is immediate
-
-// program.on('--help', function () {
-//   console.log('');
-//   console.log('Examples:');
-//   console.log('  $ custom-help --help');
-//   console.log('  $ custom-help -h');
-// });
-
 program.parse(process.argv);
-
-// console.log('stuff');
